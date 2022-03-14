@@ -15,9 +15,9 @@ annotate service.Risks with @(
             Value : owner,
         },
         {
-            $Type : 'UI.DataField',
-            Label : 'Priority',
-            Value : prio,
+            $Type       : 'UI.DataField',
+            Label       : 'Priority',
+            Value       : prio,
             Criticality : critically,
         },
         {
@@ -26,10 +26,16 @@ annotate service.Risks with @(
             Value : descr,
         },
         {
+            $Type                     : 'UI.DataField',
+            Label                     : 'Impact',
+            Value                     : impact,
+            CriticalityRepresentation : #WithIcon,
+            Criticality               : critically,
+        },
+        {
             $Type : 'UI.DataField',
-            Label : 'Impact',
-            Value : impact,
-            Criticality : critically,
+            Label : 'Business Partner',
+            Value : bp_BusinessPartner,
         },
     ]
 );
